@@ -1,0 +1,12 @@
+.car-info {
+  display: grid;
+  gap: 19px;
+}
+
+
+@media  (max-width:768px) {
+  .car-info {
+    padding-top: 60px;
+  }
+  
+}

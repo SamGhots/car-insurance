@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /*สีที่ต้องใช้ในโปรเจค 😊*/
+  --primary-color: #3FABD9; /*สีหลัก*/
+  --secondary-color: #8895e7; /*สีรอง*/
+  --accent-color:#FF6B35; /*สีที่เด่น*/
+  --text-color:#020A0D; /*สีอักษร*/
+  --bg-color:#f3f9fc; /*สีพื้นหลัง*/
+  --primary60-color: #82C3DE; /*สีหลัก ลด ความเข้มลง 60%*/
+  --primary20-color: #C4D9E2; /*สีหลัก ลด ความเข้มลง 20%*/
+  --border-color: #D4D4D4; /*สีกรอบ */
+  --color-white:#ffffff; /*สีพื้นหลังขาว*/
+  --color-line:#00C300; /*สีเขียว line*/
+  --primary-color-custom:#3fabd9ab;
+  /*ขนาดอักษรที่ใช้ในโปรเจค ✨*/
+
+  /*Heading ✅*/
+  --font-size-h1-light:93px; 
+  --font-size-h2-light:58px;
+  --font-size-h3-regular:46px;
+  --font-size-h4-regular:33px;
+  --font-size-h5-regular:23px;
+  --font-size-h6-medium:19px;  
+
+  /*Subtitle ✅*/
+  --font-size-s1-regular:15px;
+  --font-size-s2-medium:13px;
+
+   /*Paragraph ✅*/
+  --font-size-p1-regular:15px;
+  --font-size-p2-regular:13px;
+
+  /*Button ✅*/
+  --font-size-b1-bold:16px;
+  --font-size-b2-semibold:14px;
+  --font-size-b3-semibold:12px;
+  /*Label ✅*/
+  --font-size-l1-semibold:15px;
+  --font-size-l2-semibold:10px;
+
+  /* Custom Size ✅ */
+--font-size-16-custom: 16px;  /* ขนาด 16px สำหรับใช้งานทั่วไป */
+--font-size-14-custom: 14px;  /* ขนาด 14px สำหรับใช้งานทั่วไป */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;  /* กํานหนด font*/
+  background: var(--bg-color); /*กําหนดสีพื้นหลังทั้งหมด*/
+  color: var(--text-color); /*กําหนดสี ตัวอักษรเริ่มต้น*/
+  
+}
+
+a{
+  text-decoration: none; /*ลบเส้นใต้*/
+  color: var(--text-color);
+}
+
+p{
+   margin: 0px;
+   
+}
+
+
+h1{
+  margin: 0px;
+}
+h2{
+  margin: 0px;
+}
+h4{
+  margin: 0px;
+}
+
+
+h5{
+  margin: 0px;
+}
+h6{
+  margin: 0px;
 }
