@@ -10,6 +10,7 @@ import UploadReceipt from "./page/UploadReceipt/UploadReceipt.js"
 import  DocumentPage from "./page/DocumentPage/DocumentPage.js"
 import TaxRenewal from "./page/TaxRenewal/TaxRenewal.js";
 import TaxPaymentPage from "./page/TaxPaymentPage/TaxPaymentPage.js"
+import TaxSummary from "./page/TaxSummary/TaxSummary.js"
 function App() {
   return (
     <Router>
@@ -25,6 +26,9 @@ function App() {
           <Route path="/document-page" element={<DocumentPage/>} /> {/* หน้าออกเอกสารกรมธรรม์*/}
           <Route path="/tax-renewal" element={<TaxRenewal/>} />    {/* เลือกประเภทรถ ต่อภาษี */}
           <Route path="/tax-payment-page" element={<TaxPaymentPage/>} />    {/* หน้ากรอก ข้อมูลการชำระภาษี  ต่อภาษี */}
+
+
+          <Route path="/tax-summary" element={<TaxSummary/>} />    {/*สรุปผลลัพธ์การคำนวณภาษี */}
         </Routes>
       </div>
     </Router>
