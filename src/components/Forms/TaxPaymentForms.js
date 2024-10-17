@@ -104,9 +104,9 @@ function TaxPaymentForms() {
     }
   };
   const handleGoTo = () => {
-    navigate("/tax-summary"); // นำทางไปหน้าอื่น
+    navigate("/fileUploader-Page"); // นำทางไปหน้าอื่น
   };
-  
+
   return (
     <div>
       <MainTitle text="ข้อมูลการชำระภาษี" />
@@ -196,53 +196,6 @@ function TaxPaymentForms() {
               shrink: true,
             }}
             fullWidth
-          />
-        </ResponsiveStack>
-        <SectionTitle text="การจัดส่ง" iconClass="fa-solid fa-truck-fast" />
-        <ResponsiveStack>
-          <TextField
-            label="สมุดคู่มือจดทะเบียนรถ (ฉบับจริง หรือสำเนาก็ได้)"
-            type="file"
-            name="registrationBook" // เปลี่ยนชื่อฟิลด์เป็น registrationBook
-            onChange={handleChange} // ใช้ฟังก์ชันจัดการการเปลี่ยนแปลง
-            error={errors.registrationBook} // ข้อผิดพลาดสำหรับ registrationBook
-            fullWidth
-            helperText={errors.registrationBook ? "กรุณาอัปโหลดเอกสาร" : ""}
-            InputLabelProps={{
-              shrink: true, // ทำให้ label อยู่ด้านบน
-            }}
-          />
-        </ResponsiveStack>
-
-        <ResponsiveStack>
-          <TextField
-            label="หนังสือรับรองการตรวจสภาพรถ"
-            type="file"
-            name="inspectionCertificate" // เปลี่ยนชื่อฟิลด์เป็น inspectionCertificate
-            onChange={handleChange} // ใช้ฟังก์ชันจัดการการเปลี่ยนแปลง
-            error={errors.inspectionCertificate} // ข้อผิดพลาดสำหรับ inspectionCertificate
-            fullWidth
-            helperText={
-              errors.inspectionCertificate ? "กรุณาอัปโหลดเอกสาร" : ""
-            }
-            InputLabelProps={{
-              shrink: true, // ทำให้ label อยู่ด้านบน
-            }}
-          />
-        </ResponsiveStack>
-
-        <ResponsiveStack>
-          <TextField
-            label="ใบภาษีรถยนต์"
-            type="file"
-            name="vehicleTax" // เปลี่ยนชื่อฟิลด์เป็น vehicleTax
-            onChange={handleChange} // ใช้ฟังก์ชันจัดการการเปลี่ยนแปลง
-            error={errors.vehicleTax} // ข้อผิดพลาดสำหรับ vehicleTax
-            fullWidth
-            helperText={errors.vehicleTax ? "กรุณาอัปโหลดเอกสาร" : ""}
-            InputLabelProps={{
-              shrink: true, // ทำให้ label อยู่ด้านบน
-            }}
           />
         </ResponsiveStack>
       </FormContainer>

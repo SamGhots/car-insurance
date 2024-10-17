@@ -15,7 +15,7 @@ function TaxRenewal() {
     navigate(path); // นำทางไปยังเส้นทางที่ถูกส่งเข้ามา
   };
   return (
-    <div className="layout-wrapper customize">
+    <div className="layout-wrapper">
       <ProgressBar type="tax" />
       <PageTitle title="ประเภทรถของคุณคือ?" />
       <div className="container-card customize">
