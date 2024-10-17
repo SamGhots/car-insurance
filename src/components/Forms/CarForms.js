@@ -3,7 +3,12 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 /*material Ui*/
-import { TextField, useMediaQuery, Autocomplete } from "@mui/material";
+import {
+  TextField,
+  useMediaQuery,
+  Autocomplete,
+  MenuItem,
+} from "@mui/material";
 
 /*เเสดงผลฟอร์ม ui*/
 import FormContainer from "./FormContainer.js"; /* โครงสร้างฟอร์ม */
@@ -265,8 +270,40 @@ function CarForms() {
             name="color"
             value={formData.color}
             onChange={handleChange}
-            options={["แดง", "ฟ้า", "เขียว", "ดำ", "ขาว"]}
+            options={[
+              "แดง",
+              "ฟ้า",
+              "เขียว",
+              "ดำ",
+              "ขาว",
+              "เหลือง",
+              "ส้ม",
+              "ม่วง",
+              "น้ำเงิน",
+              "ชมพู",
+              "น้ำตาล",
+              "เทา",
+              "ทอง",
+              "เงิน",
+              "เบจ",
+              "เขียวอ่อน",
+              "เขียวเข้ม",
+              "ฟ้าอ่อน",
+              "ฟ้าเข้ม",
+              "แดงเข้ม",
+              "แดงอ่อน",
+              "ขาวมุก",
+              "ดำด้าน",
+              "ดำเงา",
+            ]}
             error={errors.color}
+            MenuProps={{
+              PaperProps: {
+                style: {
+                  maxHeight: 48 * 5 + 8, // ปรับให้แสดงผลได้ 5 รายการ
+                },
+              },
+            }}
           />
         </ResponsiveStack>
 
