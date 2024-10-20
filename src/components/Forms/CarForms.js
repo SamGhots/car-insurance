@@ -59,7 +59,8 @@ function CarForms() {
   });
 
   const navigate = useNavigate();
-  const isSmallScreen = useMediaQuery("(max-width:536px)"); // ตรวจสอบขนาดหน้าจอ
+  const isSmallScreen = useMediaQuery("(max-width:702px)"); // ตรวจสอบขนาดหน้าจอ
+  
   const carModels = {
     Toyota: ["Camry", "Corolla", "Hilux"],
     Honda: ["Civic", "Accord", "CR-V"],
@@ -321,8 +322,28 @@ function CarForms() {
             options={["ทะเบียนทั่วไป", "ทะเบียนขาว", "ทะเบียนแดง"]} // ตัวเลือกของฟิลด์
             error={errors.registrationType} // ข้อผิดพลาดที่เกิดขึ้น
           />
-          <TextField
-            label="เลขทะเบียนรถ"
+    
+
+    <TextField
+            label="ปีที่จดทะเบียน"
+            name="registrationYear"
+            value={formData.registrationYear} // เชื่อมโยงกับ state
+            onChange={handleChange} // ฟังก์ชันจัดการการเปลี่ยนแปลง
+            variant="outlined"
+            fullWidth
+            error={errors.registrationYear} // แสดงข้อผิดพลาด
+            helperText={
+              errors.registrationYear
+                ? "กรุณากรอก (พ.ศ เท่านั้น เช่น 2567 )"
+                : ""
+            } // ข้อความช่วยเหลือเมื่อเกิดข้อผิดพลาด
+          />
+        </ResponsiveStack>
+
+        {/* เเถวที่4 */}
+        <ResponsiveStack isSmallScreen={isSmallScreen}>
+        <TextField
+            label="เลขทะเบียนรถ (กลุ่มที่ 1)"
             name="licensePlate" // ตั้งชื่อฟิลด์ที่เก็บใน state
             value={formData.licensePlate} // ค่าของฟิลด์ที่เก็บใน state
             onChange={handleChange} // ฟังก์ชันที่ใช้จัดการการเปลี่ยนแปลง
@@ -337,10 +358,6 @@ function CarForms() {
                 : "" // ไม่มีข้อผิดพลาด
             } // ข้อความช่วยเหลือเมื่อเกิดข้อผิดพลาด
           />
-        </ResponsiveStack>
-
-        {/* เเถวที่4 */}
-        <ResponsiveStack isSmallScreen={isSmallScreen}>
           <TextField
             label="เลขทะเบียนรถ (กลุ่มที่ 2)"
             name="licensePlate2" // ตั้งชื่อฟิลด์ที่เก็บใน state
@@ -357,23 +374,7 @@ function CarForms() {
                 : "" // ไม่มีข้อผิดพลาด
             } // ข้อความช่วยเหลือเมื่อเกิดข้อผิดพลาด
           />
-          <TextField
-            label="ปีที่จดทะเบียน"
-            name="registrationYear"
-            value={formData.registrationYear} // เชื่อมโยงกับ state
-            onChange={handleChange} // ฟังก์ชันจัดการการเปลี่ยนแปลง
-            variant="outlined"
-            fullWidth
-            error={errors.registrationYear} // แสดงข้อผิดพลาด
-            helperText={
-              errors.registrationYear
-                ? "กรุณากรอก (พ.ศ เท่านั้น เช่น 2567 )"
-                : ""
-            } // ข้อความช่วยเหลือเมื่อเกิดข้อผิดพลาด
-          />
-        </ResponsiveStack>
-        <ResponsiveStack>
-          <Autocomplete
+                <Autocomplete
             fullWidth
             options={provinces}
             renderInput={(params) => (
@@ -396,6 +397,9 @@ function CarForms() {
             )}
             freeSolo
           />
+    
+        
+    
         </ResponsiveStack>
 
         <SectionTitle text="ข้อมูลทางเทคนิค" iconClass="fa fa-cogs" />

@@ -61,7 +61,7 @@ function RegisterForms() {
   return (
     <div>
       <FormContainer
-        paddingBottom="40px"
+        paddingBottom="0px"
         padding="0px"
         backgroundColor=""
         boxShadow="none"
@@ -71,6 +71,48 @@ function RegisterForms() {
           fontSize="16px"
           fontWeight="500"
         />
+        <ResponsiveStack >
+    <TextField
+      label="Username"
+      name="Username"
+      value={formData.Username}
+      onChange={handleChange}
+      error={!!errors.Username} // เปลี่ยนเป็น boolean เพื่อแสดงข้อผิดพลาด
+      fullWidth
+      InputLabelProps={{
+        shrink: true, // ทำให้ label อยู่ด้านบน
+      }}
+      helperText={
+        errors.Username
+          ? !formData.Username
+            ? "Please enter your username."
+            : ""
+          : "" // ไม่มีข้อผิดพลาด
+      } // ข้อความช่วยเหลือเมื่อเกิดข้อผิดพลาด
+    />
+  </ResponsiveStack>
+  
+  <ResponsiveStack>
+    <TextField
+      label="Password"
+      name="Password"
+      value={formData.Password}
+      onChange={handleChange}
+      error={!!errors.Password} // เปลี่ยนเป็น boolean เพื่อแสดงข้อผิดพลาด
+      type="password"
+      fullWidth
+      InputLabelProps={{
+        shrink: true, // ทำให้ label อยู่ด้านบน
+      }}
+      helperText={
+        errors.Password
+          ? !formData.Password
+            ? "Please enter your password."
+            : ""
+          : "" // ไม่มีข้อผิดพลาด
+      } // ข้อความช่วยเหลือเมื่อเกิดข้อผิดพลาด
+    />
+  </ResponsiveStack>
         <ResponsiveStack isSmallScreen={isSmallScreen}>
           <SelectField
             label=""
