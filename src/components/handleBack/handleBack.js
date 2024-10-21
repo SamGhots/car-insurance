@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import  "./handleBack.css"
-function handleBack() {
+function HandleBack() {
   const navigate = useNavigate(); // ใช้ useNavigate
 
   const handleBack = () => {
@@ -16,4 +16,4 @@ function handleBack() {
   )
 }
 
-export default handleBack
+export default HandleBack
