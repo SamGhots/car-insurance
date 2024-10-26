@@ -35,6 +35,12 @@ import UploadReceiptPageTaxAndLaw from "./page/UploadReceiptPage-taxAndLaw/Uploa
 
 
 import ReceiptPageTaxAndLaw from "./page/ReceiptPage-taxAndLaw/ReceiptPage"
+
+import MemberPage from "./page/MemberPage/MemberPage.js";
+
+import ProfileDetailsPage from "./page/ProfileDetailsPage/ProfileDetailsPage.js";
+import MyPolicyPage from "./page/MyPolicyPage/MyPolicyPage.js";
+import ResetPasswordPage from "./page/ResetPasswordPage/ResetPassword";
 function AppContent() {
   const location = useLocation(); // ใช้ useLocation ภายใน Router context
 
@@ -75,7 +81,16 @@ function AppContent() {
         <Route path="/fileUp-loader-page-taxAndLaw" element={<FileUploaderPagetaxAndLaw/>} /> 
         <Route path="/uploadReceipt-page-taxAndLaw" element={<UploadReceiptPageTaxAndLaw/>} /> 
         <Route path="/receipt-page-taxAndLaw" element={<ReceiptPageTaxAndLaw/>} /> 
-     
+
+        <Route path="/member-page" element={<MemberPage/>} /> 
+
+        <Route path="/profile-details-page" element={<ProfileDetailsPage/>} /> 
+        <Route path="/my-policy-page" element={< MyPolicyPage/>} /> 
+
+
+        <Route path="/reset-password-page" element={<ResetPasswordPage/>} /> 
+        
+ 
       </Routes>
     </div>
   );

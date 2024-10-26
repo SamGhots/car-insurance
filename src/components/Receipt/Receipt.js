@@ -41,34 +41,37 @@ function Receipt() {
           <p>เลขประจำตัวผู้เสียภาษี: <span>0994000161450</span></p>
         </div>
       </div>
-      <table className="receipt__table">
-        <thead>
-          <tr className="receipt__header-row">
-            <th>รหัสสินค้า</th>
-            <th>รายการ</th>
-            <th>บริการที่ใช้</th>
-            <th>ค่าบริการ</th>
-            <th>ราคาสินค้า</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>001</td>
-            <td>รถเก๋ง</td>
-            <td>ต่อกรมธรรม์</td>
-            <td>2,000 บาท</td>
-            <td>20,000 บาท</td>
-          </tr>
-          <tr>
-            <td>002</td>
-            <td>ต่อภาษี</td>
-            <td>ภาษี</td>
-            <td>1,500 บาท</td>
-            <td>15,000 บาท</td>
-          </tr>
-          {/* เพิ่มแถวเพิ่มเติมตามต้องการ */}
-        </tbody>
-      </table>
+      <div style={{ overflowX: 'auto' }}>
+  <table className="receipt__table">
+    <thead>
+      <tr className="receipt__header-row">
+        <th>รหัสสินค้า</th>
+        <th>รายการ</th>
+        <th>บริการที่ใช้</th>
+        <th>ค่าบริการ</th>
+        <th>ราคาสินค้า</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>รถเก๋ง</td>
+        <td>ต่อกรมธรรม์</td>
+        <td>2,000 บาท</td>
+        <td>20,000 บาท</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>ต่อภาษี</td>
+        <td>ภาษี</td>
+        <td>1,500 บาท</td>
+        <td>15,000 บาท</td>
+      </tr>
+      {/* เพิ่มแถวเพิ่มเติมตามต้องการ */}
+    </tbody>
+  </table>
+</div>
+
       <div className="receipt__footer">
         <div className="receipt__footer-title">
         <p>ข้อมูลเพิ่มเติม</p>
