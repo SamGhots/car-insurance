@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car-insurance/static/css/main.d158aa20.css",
-    "main.js": "/car-insurance/static/js/main.7b63917b.js",
+    "main.js": "/car-insurance/static/js/main.df7db82f.js",
     "static/js/213.c3ee08cf.chunk.js": "/car-insurance/static/js/213.c3ee08cf.chunk.js",
     "static/js/732.b495be14.chunk.js": "/car-insurance/static/js/732.b495be14.chunk.js",
     "static/js/453.38d2c293.chunk.js": "/car-insurance/static/js/453.38d2c293.chunk.js",
@@ -45,13 +45,13 @@
     "static/media/Calendar.svg": "/car-insurance/static/media/Calendar.331dd7b6a1cd17348df3de6d845b9c05.svg",
     "static/media/Calendar3.svg": "/car-insurance/static/media/Calendar3.3f54740279788b50aa3f582e7f651624.svg",
     "main.d158aa20.css.map": "/car-insurance/static/css/main.d158aa20.css.map",
-    "main.7b63917b.js.map": "/car-insurance/static/js/main.7b63917b.js.map",
+    "main.df7db82f.js.map": "/car-insurance/static/js/main.df7db82f.js.map",
     "213.c3ee08cf.chunk.js.map": "/car-insurance/static/js/213.c3ee08cf.chunk.js.map",
     "732.b495be14.chunk.js.map": "/car-insurance/static/js/732.b495be14.chunk.js.map",
     "453.38d2c293.chunk.js.map": "/car-insurance/static/js/453.38d2c293.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d158aa20.css",
-    "static/js/main.7b63917b.js"
+    "static/js/main.df7db82f.js"
   ]
 }
