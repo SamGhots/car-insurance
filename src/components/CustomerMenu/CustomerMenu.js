@@ -10,7 +10,7 @@ function CustomerMenu({ additionalClass }) {
         <div className="customer-menu-box">
           <div className="customer-menu-title">ผลิตภัณฑ์และบริการ</div>
           <div className="customer-menu-name">
-            <Link to="/my-policy">
+            <Link to="/my-policy-page">
               {" "}
               <i className="fa-regular fa-shield"></i> กรมธรรม์ของฉัน
             </Link>
@@ -26,7 +26,7 @@ function CustomerMenu({ additionalClass }) {
             </Link>
           </div>
           <div className="customer-menu-name">
-            <Link to="/settings">
+            <Link to="/reset-password-page">
               {" "}
               <i class="fa-regular fa-key"></i> ตั้งค่ารหัสใหม่
             </Link>

@@ -31,7 +31,7 @@ function UploadReceipt() {
       // เพิ่มโค้ดการอัปโหลดที่นี่
 
       // หลังจากอัปโหลดเสร็จแล้ว นำทางไปยังหน้าเอกสารกรมธรรม์
-      navigate("/document-page");
+      navigate("/receipt-page");
     } else {
       alert("กรุณาเลือกไฟล์ก่อน");
     }

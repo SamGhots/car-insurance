@@ -126,7 +126,7 @@ function MyPolicyPage() {
                       </p>
                     </td>
                     <td data-label="เอกสารใบคําสั่งซื้อ">
-                      <a href="#" className="btn">
+                      <a href="/receipt-page-taxAndLaw" className="btn">
                         PDF
                       </a>
                     </td>
