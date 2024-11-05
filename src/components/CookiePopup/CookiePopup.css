@@ -62,6 +62,10 @@
   width: 100%;
   max-width: 75px;
 }
+.cookie-popup h1{
+color: var(--text-color);
+font-size: 24px;
+}
 @media (max-width:647px) {
   .cookie-popup {
     display: grid;

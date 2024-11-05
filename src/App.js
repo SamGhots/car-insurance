@@ -51,7 +51,7 @@ import HomePage  from"./page/homePage/homePage"
 
 
 import CookiePolicy from "./page/CookiePolicyPage/CookiePolicyPage.js"
-
+import CookiePrivacyPolicy from "./page/CookiePrivacyPolicyPage/CookiePolicyPage.js"
 import ReceiptPageTax from "./page/ReceiptPage-tax/ReceiptPage.js"
 function AppContent() {
   const location = useLocation(); // ใช้ useLocation ภายใน Router context
@@ -67,7 +67,7 @@ function AppContent() {
       ].includes(location.pathname) && <Navbar />}
 
       <Routes>
-        <Route path="/" element={<SelectService />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/buy-insurance" element={<BuyInsurance />} />
         <Route path="/car-info" element={<CarInfo />} />
         <Route path="/policy-ownerInfo" element={<PolicyOwnerInfo />} />
@@ -142,8 +142,8 @@ function AppContent() {
 
 
         <Route path="/cookie-policy-page" element={<CookiePolicy/>} />
-
-
+        <Route path="/cookie-privacy-policy-page" element={<CookiePrivacyPolicy/>} />
+        
         <Route path="/receipt-page-tax" element={<ReceiptPageTax/>} />
       </Routes>
     </div>

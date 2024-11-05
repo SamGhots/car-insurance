@@ -183,7 +183,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
-  width: 200px; /* ปรับขนาดตามที่ต้องการ */
+
   margin-left: 10px; /* เว้นระยะห่างจาก dropdown */
 }
 
@@ -203,6 +203,17 @@
     font-size: 12px;
   }
 }
+@media  (max-width:550px) {
+  .items-per-page{
+display: grid;
+gap: 10px
+;
+  }
+  .search-bar input{
+
+  }
+}
+
 @media  (max-width:768px) {
   .table thead{
     display: none;

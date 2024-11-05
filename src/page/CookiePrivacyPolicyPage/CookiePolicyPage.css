@@ -1,0 +1,59 @@
+
+.CookiePolicy-container{
+
+  padding-top: 48px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+@media (min-width: 576px) {
+  .CookiePolicy-container {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .CookiePolicy-container {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .CookiePolicy-container {
+      max-width: 960px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .CookiePolicy-container {
+      max-width: 1140px;
+  }
+}
+
+.PolicyHeader{
+  margin-bottom: 8px;
+}
+.PolicyHeader h1{
+  font-size: 40px;
+}
+.PolicyContent p{
+  font-size: 16px;
+}
+
+.PolicyTime{
+  margin-bottom: 16px;
+}
+.PolicyContent{
+  margin-bottom: 16px;
+}
+
+
+
+
+
+

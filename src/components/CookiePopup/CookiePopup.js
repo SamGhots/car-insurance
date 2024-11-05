@@ -35,10 +35,12 @@ const CookiePopup = () => {
           <div className="cookie-popup-img">
             <img src={Cokkie} alt="" />
           </div>
+          <h1>เว็บไซต์นี้ใช้คุกกี้</h1>
           <div className="cookie-popup-title">
+            
             <p>
               เราใช้คุกกี้เพื่อนำเสนอเนื้อหาและโฆษณา คลิกเพื่อดูข้อมูลเพิ่มเติม
-              <a href="">นโยบายคุกกี้</a> เเละ <a href="">นโยบายความเป็นส่วนตัว</a>
+              <a href="#/cookie-policy-page">นโยบายคุกกี้</a> เเละ <a href="#/cookie-privacy-policy-page">นโยบายความเป็นส่วนตัว</a>
             </p>
           </div>
           <div className="cookie-popup-button">

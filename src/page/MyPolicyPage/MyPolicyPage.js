@@ -138,6 +138,7 @@ function MyPolicyPage() {
 
             {/* Dropdown สำหรับเลือกจำนวนรายการ */}
             <div className="items-per-page">
+              <div>
               <label htmlFor="itemsPerPage">แสดง:</label>
               <select
                 id="itemsPerPage"
@@ -153,6 +154,8 @@ function MyPolicyPage() {
                 </option>
               </select>
               <span> รายการ</span>
+              </div>
+        
 
               {/* ช่องค้นหา */}
               <div className="search-bar">
