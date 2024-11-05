@@ -47,7 +47,7 @@ function MySlideshow() {
             <div className="insurance-button">
               {" "}
               <Buttons
-                onClick={() => (window.location.href = "#/")}
+                onClick={() => (window.location.href = "#/select-service-page")}
                 label="เช็กเบี้ยประกัน"
                 variant="primary"
               />
@@ -66,7 +66,7 @@ function MySlideshow() {
             <div className="insurance-button">
               {" "}
               <Buttons
-                onClick={() => (window.location.href = "#/")}
+                onClick={() => (window.location.href = "#/select-service-page")}
                 label="เช็กเบี้ยประกัน"
                 variant="primary"
               />
@@ -85,7 +85,7 @@ function MySlideshow() {
             <div className="insurance-button">
               {" "}
               <Buttons
-                onClick={() => (window.location.href = "#/")}
+                onClick={() => (window.location.href = "#/select-service-page")}
                 label="เช็กเบี้ยประกัน"
                 variant="primary"
               />

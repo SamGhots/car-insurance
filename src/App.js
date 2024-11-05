@@ -68,6 +68,9 @@ function AppContent() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+
+        <Route path="/select-service-page" element={<SelectService/>} />
+   
         <Route path="/buy-insurance" element={<BuyInsurance />} />
         <Route path="/car-info" element={<CarInfo />} />
         <Route path="/policy-ownerInfo" element={<PolicyOwnerInfo />} />
