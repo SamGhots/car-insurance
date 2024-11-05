@@ -3,7 +3,7 @@ import './StickyFooter.css';
 
 function StickyFooter({ children, backgroundColor }) {
   const footerStyle = {
-    backgroundColor: backgroundColor || '#f3f9fc', // ใช้ค่าสีที่ส่งเข้ามาหรือใช้สีพื้นฐานถ้าไม่มี
+    backgroundColor: backgroundColor || 'rgb(255 255 255 / 58%)', // ใช้ค่าสีที่ส่งเข้ามาหรือใช้สีพื้นฐานถ้าไม่มี
   };
 
   return (

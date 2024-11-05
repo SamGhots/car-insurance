@@ -1,19 +1,27 @@
 .insurance-container {
   padding: 64px 60px; 
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .insurance__section-heading {
   display: grid;
   justify-content: center;
-  margin-bottom: 0px;
-  margin-top: 10%;
-  margin-bottom: 40px;
+ 
+  margin-top: 5%;
+  margin-bottom: 30px;
+  gap: 10px;
+  justify-items: center;
 
 }
 
 .insurance__title{
-  font-size: 32px;
+  font-size: 40px;
+  font-weight: 700;
+  display: flex; /* แสดงในบรรทัดเดียว */
+  gap: 10px;
+}
+.insurance__title .new-line {
+  display: inline; /* แสดงในบรรทัดเดียว */
 }
 .insurance__title span{
   position: relative; /* ตั้งค่าตำแหน่ง */
@@ -25,7 +33,7 @@
   bottom: 0;
   width: 100%;
   height: 8px;
-  background-color: #ff6b35;
+  background-color: var(--accent-color);
   opacity: 0.24;
   border-radius: 4px; 
 }
@@ -33,18 +41,19 @@
   font-size: 23px;
 }
 
-.insurance-slide .card-main{
+.insurance-slide_card{
   display: grid;
   justify-content: center;
   width: 100%;
   border-radius: 30px;
-
+height: 100%;
+padding: 16px;
+background:  white;
+border: 1px solid #d3d3d3;
 }
 
-.insurance-box{
-  padding: 16px ;
-}
-.insurance-box .title {
+
+.insurance-slide_card__title {
   font-size: 23px;
   font-weight: 700;
   color: #27173E;
@@ -54,97 +63,75 @@
   text-align: center;
 }
 
-.insurance-box .content{
+.insurance-box__content{
 font-size: 15px;
 text-align: center;
+
 }
+
 .insurance-box .text{
   margin-bottom: 20px;
 }
-.insurance-box .img-wrapper {
+.insurance-slide__img-wrapper {
   display: flex;
   text-align: center;
-  margin-bottom: 20px;
   justify-content: center;
-  background:  white;
+margin-bottom: 10px;
 }
 
-.img-wrapper img {
+.insurance-slide__img-wrapper img {
   width: 100%;
- max-width: 200px;
+height: 213px;
+max-width: 213px;
 
 }
 
 
-.btn-primary {
-  display: block;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  background: #6236FF !important;
-  border-color: #6236FF !important;
-}
-
-.btn-primary a {
-  color: #FFFFFF !important;
-  font-size: 12px;
-  padding: 4px 6px 4px 6px;
-  border: 2px;
-  display: block;
-
-
-}
-
-
-
-
-.iconbox {
-  width: 48px;
-  height: 48px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  /* ปรับมุมให้โค้งมน (ถ้าต้องการ) */
-}
-
-.bg-danger {
-  background: #FF396F !important;
-
-}
-
-.bg-blue {
-  background: #6236FF;
-}
-.bg-grey{
-  background: #d2cee2;
-}
-.bg-grenn{
-  background-color: #1dcc70;
-}
-.iconbox i {
-  font-size: 24px;
-  /* ขนาดไอคอน */
-
-}
-
-.bg-white{
-  background-color: #E1F2F9;
-  
-}
 .insurance-button{
   display: grid;
   justify-content: center;
+  margin-top: 40px;
 }
+
+
+
+
+
+
+.insurance-button button{
+width: 120px;
+}
+
 
 .insurance-slide {
-  width: calc(40%);
+  width: calc(15%);
 
 }
 
-
-
+.slide-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc; /* สีพื้นหลังสำหรับดอทที่ไม่ใช่สไลด์ที่แสดง */
+  border-radius: 50%; /* ทำให้ดอทเป็นรูปวงกลม */
+  display: inline-block;
+}
+.dot.active {
+  background-color: var(--primary-color); /* สีสำหรับดอทที่แสดง */
+}
+@media (max-width:1230px) {
+  .insurance-slide {
+    width: calc(23%);
+  
+  }
+  
+  
+}
 @media (max-width: 1024px) {
 .insurance-container{
   padding: 60px 40px;
@@ -154,18 +141,19 @@ text-align: center;
 
 @media (min-width: 769px) and (max-width: 991px) {
   .insurance-slide {
-    width: calc(50% ); 
+    width: calc(25% ); 
  
   }
+
 }
 
 
 @media (max-width: 768px) {
   .insurance-slide {
-    width: calc(55% ); 
+    width: calc(35% ); 
   }
   .insurance-container{
-    padding: 60px 10px; 
+    padding: 60px 30px; 
   }
   .insurance__title {
     font-size: 28px; /* ปรับขนาดให้เหมาะสมกับหน้าจอที่เล็กลง */
@@ -174,28 +162,38 @@ text-align: center;
   .insurance__link {
     font-size: 20px; /* ปรับขนาดให้เหมาะสมกับหน้าจอที่เล็กลง */
   }
-}
-
-@media (max-width: 500px) {
-  .insurance-box .title {
-    font-size: 18px;
-
-}
-  .insurance-box .content {
-    font-size: 12px;
+  .insurance-slide_card__title{
+    font-size: 20px;
+  }
+  .insurance-box__content{
+    font-size: 14px;
+  }
 
 }
-.insurance__title {
-  font-size: 24px; /* ปรับขนาดให้เหมาะสมกับหน้าจอที่เล็กลง */
-}
 
-.insurance__link {
-  font-size: 18px; /* ปรับขนาดให้เหมาะสมกับหน้าจอที่เล็กลง */
-}
-}
-@media (max-width: 375px) {
-  .insurance-button button.primary{
-    width: 100px !important;
+@media (max-width:600px) {
+  .insurance-slide {
+    width: calc(40% ); 
+  }
+  .insurance__title {
+    display:contents; /* ทำให้ขึ้นบรรทัดใหม่ */
+   
+  }
+  .insurance__title span{
+    font-size: 38px;
+  }
+  .insurance__section-heading{
+    justify-items: start;
+    justify-content: start;
   }
 }
-
+@media (max-width:599px) {
+  .insurance-slide {
+    width: calc(50% ); 
+  }
+}
+@media (max-width: 480px) {
+  .insurance-container{
+    padding: 65px  20px 60px 20px; 
+  }
+}

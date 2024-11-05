@@ -9,17 +9,54 @@
   width: 100%;
   height: 50px;
   background: var(--primary-color);
-  border-bottom: 6px solid #3586A9;
+
   border: none;
   border-radius: 16px;
   transition: background-color 0.3s, transform 0.1s;
+  font-family: "Prompt", sans-serif;
+  cursor: pointer;
+}
+
+
+.button:active {
+  transform: translateY(2px);
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* ปุ่มถัดไป (primary) */
 .button.primary{
   background-color: var(--primary-color);
   color: white;
-  border-bottom: 6px solid #3586A9;
+  border-bottom: 6px solid #2c61b0;
+  
+}
+.button.primary:hover {
+  background-color:var(--primary-color-hover);
+}
+.button.primary:active{
+  background-color:var(--primary-color-active);
+}
+
+.button.primary.slideDown{
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 1s ease forwards;
+  animation-delay: 1.3s; /* เริ่มแอนิเมชันหลังจาก intro-main-title */
+} 
+
+/* ปุ่มถัดไป (secondary) */
+.button.secondary{
+  background-color: var(--secondary-color);
+  color: white;
+  border-bottom: 6px solid var(--secondary-color-bottom);
+  
+}
+.button.secondary:hover {
+  background-color:var(--secondary-color-hover);
+}
+.button.secondary:active{
+  background-color:var(--secondary-color-active);
 }
 /* ปุ่มถัดไป (accent) */
 .button.accent{
@@ -39,32 +76,31 @@
 /* ปุ่มยกเลิก (cancel) */
 .button.cancel {
   background-color: white;
-  border: 2px solid #3586A9;
-  color: #3586A9;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
-
-/* Hover และ Active */
-.button:hover {
-  background-color: #52c3f3;
-}
-
-.button:active {
-  transform: translateY(2px);
-  background-color: #4ea7c8;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .button.cancel:hover {
-  background-color: #f0f0f0; /* เปลี่ยนพื้นหลังเมื่อ hover */
+  background-color: white; /* เปลี่ยนพื้นหลังเมื่อ hover */
 }
+
+.button.comingSoon {
+  background-color: white;
+  color: var(--primary-color-hover);
+}
+
+.button.comingSoon:hover  {
+  background-color: white; /* เปลี่ยนพื้นหลังเมื่อ hover */
+}
+
+
 .button-container-right{
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width:425px) {
-  .button {
-    /*   height: 40px !important;
-    width: 130px !important;*/
- 
-  }
+
+@media (max-width:658px) {
+  .button-container-right {
+    display: flex;
+    justify-content: center;
+}
 }

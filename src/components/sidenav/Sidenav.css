@@ -33,7 +33,7 @@
 
 /* สไตล์สำหรับลิงก์ใน Sidenav */
 .sidenav a {
-  padding: 10px 0px; /* เว้นช่องห่างรอบๆลิงก์ */
+  padding: 16px 0px; /* เว้นช่องห่างรอบๆลิงก์ */
   font-size: var(--font-size-16-custom);
   color: var( --text-color); /* สีข้อความในลิงก์ */
   display: flex; /* แต่ละลิงก์เป็นบล็อคแยก */

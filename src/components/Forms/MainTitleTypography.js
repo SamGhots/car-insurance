@@ -9,7 +9,7 @@ function MainTitleTypography({ text}) {
       fontSize: "23px",
       fontWeight: "bold",
       textAlign: "center",
-      background: "#FF6B35",
+      background: "var(--accent-color)",
       color: "#ffffff",
       padding: "20px",
       width: "100%",

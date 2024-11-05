@@ -90,6 +90,9 @@
 }
 
 .table-title{
+  position: sticky;
+  top: 0;
+  
   padding: 20px 30px;
   background-color: var(--primary-color);
   color: #ffffff;
@@ -112,6 +115,93 @@
   width: 100%;
   max-height: 500px;
   overflow-y: auto;
+
+}
+
+.policy__table-box thead {
+  position: sticky;
+  top: 74px;
+  background-color: #ffffff; /* เพิ่มสีพื้นหลังให้หัวตาราง */
+  z-index: 1; /* ให้หัวข้ออยู่ด้านหน้าของเนื้อหา */
+}
+.table td .order-icon{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 18px 12px;
+  font-size: 14px;
+  background:  white;
+}
+
+.items-per-page label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.items-per-page select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.items-per-page select:hover {
+  border-color: #888; /* เปลี่ยนสีเมื่อเมาส์วาง */
+}
+
+.items-per-page select:focus {
+  outline: none;
+  border-color: #007bff; /* เปลี่ยนสีขอบเมื่ออยู่ในโฟกัส */
+}
+
+.items-per-page span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px; /* ปรับขนาดตามที่ต้องการ */
+  margin-left: 10px; /* เว้นระยะห่างจาก dropdown */
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #007bff; /* เปลี่ยนสีขอบเมื่ออยู่ในโฟกัส */
+}
+
+@media  (max-width:1055px) {
+  .table thead tr th{
+    font-size: 12px;
+  }
+  .table tbody tr td{
+    font-size: 12px;
+  }
+  .table tbody tr td .btn{
+    font-size: 12px;
+  }
 }
 @media  (max-width:768px) {
   .table thead{
@@ -134,7 +224,7 @@
     position: absolute;
     left: 0;
     width: 50%;
-    padding-left: 15px;
+    padding-left: 30px;
     font-weight: 600;
     font-size: 14px;
     text-align: left;
@@ -144,5 +234,17 @@
   .policy__table-box{
     max-height: none;
     overflow-y: hidden;
+  }
+
+
+
+  .table td .order-icon {
+    position: absolute;
+    left: 10px; /* ระยะห่างจากขอบซ้าย */
+    top: 50%; /* แนวตั้งกลาง */
+    transform: translateY(-50%); /* ปรับให้ไอคอนอยู่กลาง */
+  }
+  .table td .order-icon{
+    display: block;
   }
 }

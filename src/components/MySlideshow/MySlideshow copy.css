@@ -25,7 +25,7 @@
   bottom: 0;
   width: 100%;
   height: 8px;
-  background-color: #ff6b35;
+  background-color: var(--accent-color);
   opacity: 0.24;
   border-radius: 4px; 
 }
@@ -38,11 +38,12 @@
   justify-content: center;
   width: 100%;
   border-radius: 30px;
+height: 100%;
 
 }
 
 .insurance-box{
-  padding: 16px ;
+  padding: 16px;
 }
 .insurance-box .title {
   font-size: 23px;
@@ -54,10 +55,12 @@
   text-align: center;
 }
 
-.insurance-box .content{
+.insurance-box__content{
 font-size: 15px;
 text-align: center;
+
 }
+
 .insurance-box .text{
   margin-bottom: 20px;
 }
@@ -130,7 +133,8 @@ text-align: center;
 }
 
 .bg-white{
-  background-color: #E1F2F9;
+  background-color: white;
+  border: 1px solid #d3d3d3;
   
 }
 .insurance-button{
@@ -139,7 +143,7 @@ text-align: center;
 }
 
 .insurance-slide {
-  width: calc(40%);
+  width: calc(15%);
 
 }
 
@@ -154,7 +158,7 @@ text-align: center;
 
 @media (min-width: 769px) and (max-width: 991px) {
   .insurance-slide {
-    width: calc(30% ); 
+    width: calc(50% ); 
  
   }
 }
@@ -162,7 +166,7 @@ text-align: center;
 
 @media (max-width: 768px) {
   .insurance-slide {
-    width: calc(43% ); 
+    width: calc(55% ); 
   }
   .insurance-container{
     padding: 60px 10px; 

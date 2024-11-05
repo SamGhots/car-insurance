@@ -11,7 +11,10 @@
     /* background: var(--color-white);*/
    
 }
-
+.member-page__welcome img{
+  width: 100%;
+  max-width: 466px;
+}
 
 
 @media (max-width: 1023px) { /* กำหนดขนาดหน้าจอตามต้องการ */

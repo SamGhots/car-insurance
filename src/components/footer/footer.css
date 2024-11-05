@@ -1,11 +1,11 @@
 .footer-bg {
-  background-color: #EDEEF1;
+  background-color: var(--primary-color);
   padding: 30px 60px;
 }
 .footer-container{
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #1313132f;
+  border-bottom: 2px solid #d2d2d22f;
   padding-bottom: 52px; /* เพิ่ม padding เพื่อให้เว้นระยะจากเส้น */
 }
 .footer-logo {
@@ -25,9 +25,10 @@
 .footer-contact{
   display: grid;
   gap: 10px;
+  color: rgba(255, 255, 255, 0.75);
 }
 .footer-number i{
-  color: var(--primary-color);
+  color: var(--color-white);
   font-size: 20px;
 }
 .footer-number p{
@@ -45,7 +46,7 @@
 
 .footer-email i{
   font-size: 20px;
-  color: var(--primary-color);
+  color: var(--color-white);
 }
 .footer-line {
   display: flex;
@@ -58,18 +59,19 @@
 }
 .footer-line  i{
   font-size: 20px;
-  color: var(--primary-color);  
+  color: var(--color-white);
 }
 .footer-social{
   margin-top: 40px;
 }
 .footer-social i{
   font-size: 20px;
-  color: var(--primary-color);
+  color: var(--color-white);
 }
 .footer-copyright{
   padding: 10px 0;
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 
@@ -92,7 +94,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 12px;
-color: var(--primary-color);
+color: var(--color-white);
 }
 
 .footer-link-item {
@@ -100,6 +102,7 @@ color: var(--primary-color);
   text-decoration: none;
   margin-bottom: 5px;
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 

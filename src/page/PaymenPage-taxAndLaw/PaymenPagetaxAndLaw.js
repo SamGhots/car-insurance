@@ -11,7 +11,7 @@ import Buttons from "../../components/Buttons/Buttons";
 function PaymentPageTaxAndLaw() {
   const navigate = useNavigate();
   const handleNextClick = () => {
-    navigate("/upload-receipt"); // นำทางไปยังหน้า /upload-receipt
+    navigate("/uploadReceipt-page-taxAndLaw"); // นำทางไปยังหน้า /upload-receipt
   };
 
   return (

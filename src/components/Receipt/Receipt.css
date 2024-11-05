@@ -150,13 +150,18 @@ font-weight: 300;
   gap: 20px;
 }
 @media (max-width:533px) {
+
   .receipt__table {
     width: 150%;
   }
-  #receipt-content {
-padding: 20px;
+  .container-receipt{
+ 
   }
-
-  
+  .layout-wrapper.customize.receipt-mobile{
+padding:  60px  10px!important;
+}
+.receipt__footer {
+ 
+}
   
 }

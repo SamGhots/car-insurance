@@ -3,7 +3,8 @@ import  "./MemberPage.css"
 import CustomerMenu from "../../components/CustomerMenu/CustomerMenu";
 import "../../components/layout-wrapper/layout-wrapper.css";
 import HandleBack from "../../components/handleBack/handleBack";
-import Car from "../../assets/driving-car.svg"
+
+import CarWrapper2  from "../../assets/driving-rafiki 387ADF.svg"
 function memberPage() {
   return (
     <>
@@ -12,7 +13,7 @@ function memberPage() {
         <div className="member-page-container">
         <CustomerMenu additionalClass="mobile" />
         <div className="member-page__welcome">
-    <img src={Car} alt="" />
+    <img src={CarWrapper2} alt="" />
         </div>
         </div>
        

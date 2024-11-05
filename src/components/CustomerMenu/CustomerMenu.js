@@ -61,7 +61,7 @@ function CustomerMenu({ additionalClass }) {
           </div>
         </div>
         <div className="customer-menu-footer">
-          <Link to="/my-policy">
+          <Link to="/login-page">
             <h1>ออกจากระบบ</h1>
           </Link>
           <p>เวอร์ชั่น 1.0</p>

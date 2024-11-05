@@ -54,12 +54,12 @@ function TaxSummary() {
     { label: "จำนวนวันในการคิดเวลา", value: "0 วัน", iconClass: "fa-calendar" }, // ตัวอย่างไอคอน
   ];
   const handlePurchaseClick = () => {
-    navigate('/payment-page'); // นำผู้ใช้ไปยังหน้าชำระเงิน
+    navigate('/fileUploader-Page'); // นำผู้ใช้ไปยังหน้าชำระเงิน
   };
   return (
     <div>
       <HandleBack /> {/* ปุ่มย้อนกลับ */}
-      <div className="layout-wrapper customize">
+      <div className="layout-wrapper customize taxSummary">
         <ProgressBar type="tax" />{" "}
         {/* Bar บอกขั้นตอนว่าอยู่ไหน ประเภท ข้อมูลที่แสดงคือ พรบ */}
         <TaxTitle
@@ -72,7 +72,7 @@ function TaxSummary() {
         <TaxConten title="ค่าบริการและค่าจัดส่ง" data={ServiceShippingCosts} />
         <TaxConten title="ข้อมูลวันหยุดและการคิดราคา" data={Holiday} />
         <TaxConten title="การคิดราคาตามเวลา" data={TimeBasedPricing} />
-        <StickyFooter backgroundColor="#3FABD9">
+        <StickyFooter backgroundColor="var(--primary-color)">
           <div
             style={{
               display: "flex",
@@ -87,7 +87,7 @@ function TaxSummary() {
 
             <Buttons
               label="ซื้อเลย"
-              variant="accent"
+              variant="secondary"
               height="50px"
               fontSize="23px"
               width="166px"

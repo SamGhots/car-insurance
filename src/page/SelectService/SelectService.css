@@ -1,15 +1,14 @@
 
+
 .select-service h1{
   font-size: var(--font-size-h5-regular);
-
   text-align: center;
-}
-
-
-
-.select-service {
   
 }
+
+
+
+
 
 .select-service__card-container {
   display: flex;
@@ -23,7 +22,7 @@
   align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
   justify-content: space-between; /* ไอคอนจะชิดขวา ส่วนข้อความจะชิดซ้าย */
  
-  background-color: #f9f9f9;
+  background-color: var(--color-white);
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
@@ -33,7 +32,7 @@
 }
 .select-service__card:hover {
   transform: translateY(-5px);
-  background-color: var(--primary-color-custom); /* เปลี่ยนพื้นหลังเมื่อ hover */
+  background-color: #50C4ED; /* เปลี่ยนพื้นหลังเมื่อ hover */
   color: var(--color-white);
 }
 

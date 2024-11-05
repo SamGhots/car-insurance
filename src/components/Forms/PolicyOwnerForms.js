@@ -299,7 +299,7 @@ function PolicyOwnerForms() {
       </FormContainer>
 
       <StickyFooter>
-        <Buttons onClick={handleSubmit}  variant="primary" label="บันทึก" />
+        <Buttons onClick={handleSubmit} width="200px"  variant="primary" label="บันทึก" />
       </StickyFooter>
     </div>
   );

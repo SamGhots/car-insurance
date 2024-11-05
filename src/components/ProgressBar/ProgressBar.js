@@ -20,16 +20,16 @@ function ProgressBar({ type }) {
         { name: "เริ่ม", path: ["/tax-renewal"] },
         { name: "กรอกข้อมูล", path: ["/tax-payment-page","/fileUploader-Page"] },
         { name: "ตรวจสอบ", path: ["/tax-summary"] },
-        { name: "แจ้งชำระเงิน", path: ["/payment-notification"] },
+        { name: "แจ้งชำระเงิน", path: ["/payment-notification","/payment-pageTax","/upload-receiptTax"] },
         { name: "ใบเสร็จ", path: ["/receipt"] },
       ];
     } else if (type === "act&tax") {
       return [
         { name: "เริ่ม", path: ["/insurance-page-taxAndLaw","/carInfo-page-taxAndLaw"] },
         { name: "ผู้เอาประกัน", path: ["/policy-page-taxAndLaw"] },
-        { name: "ข้อมูลชําระภาษี", path: ["/tax-Summary-page-taxAndLaw","/tax-payment-page-taxAndLaw","/fileUp-loader-page-taxAndLaw"] },
+        { name: "ข้อมูลชําระภาษี", path: ["/tax-summary-page-taxAndLaw","/tax-payment-page-taxAndLaw","/fileUp-loader-page-taxAndLaw"] },
         { name: "ชําระเงิน", path: ["/paymen-page-taxAndLaw"] },
-        { name: "เเจ้งชําระเงิน", path: ["/UploadReceipt-taxAndLaw"] },
+        { name: "เเจ้งชําระเงิน", path: ["/uploadReceipt-page-taxAndLaw"] },
         { name: "ใบเสร็จ", path: ["/receipt"] },
       ];
     }

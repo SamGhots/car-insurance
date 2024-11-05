@@ -9,8 +9,11 @@
 .layout-wrapper.customize{
   display: grid;
   gap: 19px;
+  
 }
-
+.layout-wrapper.customize.taxSummary{
+margin-bottom: 70px;
+}
 @media (min-width: 1024px) {
   .layout-wrapper.desktop{
     padding: 57px 60px 30px 60px; 
@@ -48,7 +51,6 @@
     padding: 30px 30px; /* ปรับ padding สำหรับมือถือ */
   }
   .layout-wrapper.customize{
-  
     padding-top: 60px;
   }
   .layout-wrapper.desktop{

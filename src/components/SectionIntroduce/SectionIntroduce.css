@@ -27,21 +27,36 @@
   position: relative;
   /* เพื่อให้ ::after อ้างอิงกับตำแหน่งของ .intro-main-title */
   padding-bottom: 5px;
-}
 
+
+
+  opacity: 0; /* เริ่มต้นที่ไม่แสดง */
+  transform: translateY(-20px); /* เริ่มต้นที่ตำแหน่งเหนือขึ้น */
+  animation: slideDown 1s ease forwards; /* ใช้ animation slideDown */
+  animation-delay: 0.5s; /* ดีเลย์เล็กน้อย */
+}
+@keyframes slideDown {
+  to {
+    opacity: 1; /* ทำให้แสดงผลเต็มที่ */
+    transform: translateY(0); /* ตำแหน่งสุดท้าย */
+  }
+}
 .intro-main-title::after {
-  content: '';
+
+
+  /*  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  /* ความกว้างของเส้นใต้เท่ากับความกว้างข้อความ */
+  
   height: 8px;
-  background-color: #ff6b35;
+  background-color: var(--accent-color);
   opacity: 0.24;
-  /* ควบคุมความโปร่งแสง */
+
   border-radius: 4px;
-  /* ทำให้ขอบเส้นโค้งมน */
+ */
+
 }
 
 .intro-btn-container {
@@ -51,10 +66,20 @@
 .intro-sub-title {
   font-size: 46px;
   padding-bottom: 12px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 1s ease forwards;
+  animation-delay: 0.7s; /* เริ่มแอนิเมชันหลังจาก intro-main-title */
+
+  
 }
 
 .intro-slogan {
   font-size: 18px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 1s ease forwards;
+  animation-delay: 1s; /* เริ่มแอนิเมชันหลังจาก intro-main-title */
 }
 
 .intro-text-box {
@@ -63,6 +88,11 @@
 
 .banner-lottie-wrapper {
   width: 100%;
+
+  opacity: 0; /* ซ่อนภาพในตอนแรก */
+  transform: translateY(-30px); /* เลื่อนภาพขึ้นเล็กน้อย */
+  animation: slideDown 2s ease-out forwards; /* เรียกใช้งานแอนิเมชัน */
+  animation-delay: 0.5s; /* หน่วงเวลา 0.5 วินาทีก่อนเริ่ม */
 }
 
 .banner-lottie-wrapper img {
@@ -75,6 +105,35 @@
 .intro-text-box {
   position: relative;
 }
+
+
+
+.icon-expand {
+  font-size: 0;
+  animation: expandToSize 1s ease forwards, blink 2s ease-in-out infinite; /* เพิ่มแอนิเมชัน blink แบบ loop */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 170px;
+  animation-delay: 0s, 1s; /* delay การกระพริบให้เริ่มหลังจากขยายเสร็จ */
+  color: var(--accent-color);
+}
+
+@keyframes expandToSize {
+  to {
+    font-size: 43px;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* แสดงผลเต็ม */
+  }
+  50% {
+    opacity: 0; /* ซ่อน */
+  }
+}
+
 
 @media (max-width:1200px) {
   .intro-container {
@@ -108,7 +167,9 @@
     max-width: 980px;
 
   }
-
+.intro-sub-title{
+  font-size: 42px;
+}
   .fa-sharp.fa-regular.fa-sparkles {
     right: 86px !important;
   }
@@ -201,11 +262,11 @@ text-align: center;
 
 @media (max-width: 360px) {
   .fa-sharp.fa-regular.fa-sparkles {
-    font-size: 16px !important; /* ลดขนาดไอคอนให้เล็กลง */
-    left: 227px;
+    font-size: 22px !important; /* ลดขนาดไอคอนให้เล็กลง */
+    left: 253px;
   }
   .intro-main-title {
-    font-size: 36px; /* ปรับให้ขนาดเล็กลงเพื่อความเหมาะสมกับหน้าจอ */
+    font-size: 40px; /* ปรับให้ขนาดเล็กลงเพื่อความเหมาะสมกับหน้าจอ */
   }
   .intro-sub-title {
     font-size: 20px; /* ขนาดตัวอักษรสำหรับหัวข้อรอง */

@@ -70,7 +70,7 @@ function TaxPaymentForms() {
     }
   };
   const handleGoTo = () => {
-    navigate("/tax-summary"); // นำทางไปหน้าอื่น
+    navigate("/payment-pageTax"); // นำทางไปหน้าอื่น
   };
 
   return (
@@ -131,7 +131,7 @@ function TaxPaymentForms() {
       </FormContainer>
 
       <StickyFooter>
-        <Buttons onClick={handleGoTo} variant="primary" label="บันทึก" />
+        <Buttons onClick={handleGoTo} variant="primary" label="บันทึก" width="200px" />
       </StickyFooter>
     </div>
   );

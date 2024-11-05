@@ -100,11 +100,11 @@ function TaxPaymentForms() {
       console.log("ข้อมูลที่ส่ง:", formData);
       // ทำการส่งข้อมูลที่นี่
 
-      navigate("/payment-page");
+      navigate("#/payment-page");
     }
   };
   const handleGoTo = () => {
-    navigate("/fileUploader-Page"); // นำทางไปหน้าอื่น
+    navigate("/tax-summary"); // นำทางไปหน้าอื่น
   };
 
   return (
@@ -201,7 +201,7 @@ function TaxPaymentForms() {
       </FormContainer>
 
       <StickyFooter>
-        <Buttons onClick={handleGoTo} variant="primary" label="บันทึก" />
+        <Buttons onClick={handleGoTo} variant="primary" width="200px" label="บันทึก" />
       </StickyFooter>
     </div>
   );

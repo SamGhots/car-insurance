@@ -494,9 +494,9 @@ function CarForms() {
         </ResponsiveStack>
       </FormContainer>
 
-      <StickyFooter>
+      <StickyFooter  >
         {/* ปุ่มส่งข้อมูล */}
-        <Buttons onClick={handleSubmit} variant="primary" label="บันทึก" />
+        <Buttons  fontSize="14px" onClick={handleSubmit} variant="primary" label="บันทึก"  width="200px"/>
       </StickyFooter>
     </div>
   );

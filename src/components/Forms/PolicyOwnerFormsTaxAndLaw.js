@@ -102,7 +102,7 @@ function PolicyOwnerForms() {
       console.log("ข้อมูลที่ส่ง:", formData);
       // ทำการส่งข้อมูลที่นี่
 
-      navigate("/paymen-page-taxAndLaw");
+      navigate("/tax-payment-page-taxAndLaw");
     }
   };
   return (
@@ -299,7 +299,7 @@ function PolicyOwnerForms() {
       </FormContainer>
 
       <StickyFooter>
-        <Buttons onClick={handleSubmit}  variant="primary" label="บันทึก" />
+        <Buttons onClick={handleSubmit}  variant="primary" label="บันทึก" width="200px" />
       </StickyFooter>
     </div>
   );

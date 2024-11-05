@@ -1,7 +1,7 @@
 import React from "react";
 import "./Receipt.css";
 import Logo from "../../assets/logo.svg";
-
+import Logo1 from "../../assets/logo1.svg";
 function Receipt() {
   return (
     
@@ -25,7 +25,7 @@ function Receipt() {
           </div>
         </div>
         <div className="receipt__header-logo">
-          <img src={Logo} alt="" />
+          <img src={Logo1} alt="" />
         </div>
       </div>
       <div className="receipt__details">
@@ -53,13 +53,7 @@ function Receipt() {
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>001</td>
-        <td>รถเก๋ง</td>
-        <td>ต่อกรมธรรม์</td>
-        <td>2,000 บาท</td>
-        <td>20,000 บาท</td>
-      </tr>
+ 
       <tr>
         <td>002</td>
         <td>ต่อภาษี</td>

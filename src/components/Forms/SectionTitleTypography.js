@@ -15,7 +15,7 @@ const SectionTitleTypography = ({ text, iconClass, fontSize ="19px" , fontWeight
     >
       <i
         className={iconClass}
-        style={{ fontSize: "23px", color: "#3FABD9" }}
+        style={{ fontSize: "23px", color: "var(--primary-color)" }}
       ></i>
       {text}
     </Typography>

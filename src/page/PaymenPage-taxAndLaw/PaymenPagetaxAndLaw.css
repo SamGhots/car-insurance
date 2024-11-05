@@ -11,7 +11,7 @@
 }
 
 .container-payment h1{
-font-size: var(--font-size-h6-medium);
+font-size: var(--font-size-h5-regular);
 color: var(--text-color);
 font-weight: 500;
 }
@@ -24,6 +24,7 @@ font-weight: 500;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid var(--border-color);
+  margin: 5px 0;
 }
 .payment-time p{
   font-size: var(--font-size-s2-medium);
@@ -53,6 +54,6 @@ font-weight: 500;
   height: 53px;
 }
 .qr-payment{
-width: 180px;
-height: 180px;
+width: 200px;
+height: 200px;
 }

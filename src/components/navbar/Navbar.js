@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./navbar.css";
 import "../layout-wrapper/layout-wrapper.css"; // css ปรับขนาดหน้าจอต่างๆ
 import logo from "../../assets/logo.svg"; // รูป logo ของ bard
+import logo1 from "../../assets/logo1.svg"
 import Sidenav from '../sidenav/Sidenav'; // เปลี่ยนชื่อให้ตรงกับชื่อไฟล์จริง
 
 function Navbar() {
@@ -38,7 +39,7 @@ function Navbar() {
         <button className="hamburger-menu" onClick={toggleSidenav}>
           <i className="fa-light fa-bars"></i>
         </button>
-        <a href="/home-page">  <img src={logo} alt="Logo" className="logo" /></a>
+        <a href="#/home-page">  <img src={logo1} alt="Logo" className="logo" /></a>
       
       </div>
       <div className="navbar-center" ref={dropdownRef}>
@@ -114,7 +115,7 @@ function Navbar() {
           </a>
         </div>
         <div className="navbar__icon">
-          <a href="/member-page">
+          <a href="#/member-page">
           <i className="fa-solid fa-user"></i>
           <span>Todsapon</span>
           {/*<span>เข้าสู่ระบบ</span> */}

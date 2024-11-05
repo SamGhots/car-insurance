@@ -27,6 +27,7 @@ function PaymentPage() {
             <p>Payment Time Left</p>
             <h5>14:39</h5>
           </div>
+      
           <img src={QrPayment} className="qr-payment" alt="" />
           <h6>ชื่อบัญชี : ร้านค้า</h6>
 
@@ -38,7 +39,7 @@ function PaymentPage() {
           />
 
           <Buttons label="ยกเลิก" variant="cancel" height="39px" />
-          <a href="">วิธีที่การจ่าย</a>
+          <a className="payment__pay" href="">วิธีที่การจ่าย</a>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 // CookiePopup.jsx
 import React, { useState, useEffect } from "react";
 import "./CookiePopup.css";
+import Cokkie from "../../assets/cookie.png"
 
 const CookiePopup = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,19 +22,30 @@ const CookiePopup = () => {
     setIsVisible(false);
   };
 
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
   return (
     isVisible && (
-      <div className="cookie-popup">
-        <div className="cookie-popup-title">
-        <p>เว็บไซต์นี้ใช้คุ้กกี้เพื่อปรับปรุงประสบการณ์การใช้งานของคุณ</p>
-        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer"><p>อ่านเพิ่มเติม</p></a>
+      <>
+        <div className="overlay" onClick={handleDecline}></div> {/* Overlay div */}
+        <div className="cookie-popup">
+          <button className="close-button-cookie-popup" onClick={handleClose}><i class="fa-regular fa-circle-xmark"></i></button> {/* Close button */}
+          <div className="cookie-popup-img">
+            <img src={Cokkie} alt="" />
+          </div>
+          <div className="cookie-popup-title">
+            <p>
+              เราใช้คุกกี้เพื่อนำเสนอเนื้อหาและโฆษณา คลิกเพื่อดูข้อมูลเพิ่มเติม
+              <a href="">นโยบายคุกกี้</a> เเละ <a href="">นโยบายความเป็นส่วนตัว</a>
+            </p>
+          </div>
+          <div className="cookie-popup-button">
+            <button onClick={handleAccept}>ยินยอม</button>
+          </div>
         </div>
- 
-      <div className="cookie-popup-button">
-        <button onClick={handleAccept}>ยอมรับ</button>
-        <button onClick={handleDecline}>ปฏิเสธ</button>
-      </div>
-    </div>
+      </>
     )
   );
 };

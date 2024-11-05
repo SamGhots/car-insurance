@@ -2,7 +2,8 @@ import React from "react";
 import "./footer.css";
 
 import Logo from "../../assets/logo.svg";
-
+import Logo1 from "../../assets/logo1.svg";
+import Logo2 from "../../assets/logo2.svg";
 function Footer() {
   return (
     <div className="footer-bg">
@@ -10,7 +11,7 @@ function Footer() {
         <div className="footer-container-left">
           <div className="footer-left-box">
             <div className="footer-logo">
-              <img src={Logo} alt="Company Logo" />
+              <img src={Logo2} alt="Company Logo" />
             </div>
             <div className="footer-contact">
               <div className="footer-number">

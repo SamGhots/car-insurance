@@ -496,7 +496,7 @@ function CarForms() {
 
       <StickyFooter>
         {/* ปุ่มส่งข้อมูล */}
-        <Buttons onClick={handleSubmit} variant="primary" label="บันทึก" />
+        <Buttons onClick={handleSubmit} variant="primary" label="บันทึก" width="200px" />
       </StickyFooter>
     </div>
   );

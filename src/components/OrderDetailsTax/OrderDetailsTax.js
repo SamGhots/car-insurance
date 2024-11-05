@@ -62,7 +62,7 @@ function OrderDetailsTax() {
             <img src={Vector2} alt="" />
             <div className="order-details__content-item-text" >
               <p>ปริมาตรกระบอกสูบ (CC)</p>
-              <p>ความจุกระบอกสูบ (ซีซี)</p>
+              <p>100</p>
             </div>
           </div>
        

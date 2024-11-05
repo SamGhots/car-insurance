@@ -1,6 +1,6 @@
 import "./App.css";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   useLocation,
@@ -11,7 +11,9 @@ import BuyInsurance from "./page/BuyInsurance/BuyInsurance";
 import CarInfo from "./page/CarInfo/CarInfo.js";
 import PolicyOwnerInfo from "./page/PolicyOwnerInfo/PolicyOwnerInfo.js";
 import PaymentPage from "./page/PaymentPage/PaymentPage";
+import PaymentPageTax from "./page/PaymentPage/PaymentPageTax.js";
 import UploadReceipt from "./page/UploadReceipt/UploadReceipt.js";
+import UploadReceiptTax from "./page/UploadReceipt/UploadReceiptTax.js";
 import DocumentPage from "./page/DocumentPage/DocumentPage.js";
 import TaxRenewal from "./page/TaxRenewal/TaxRenewal.js";
 import TaxPaymentPage from "./page/TaxPaymentPage/TaxPaymentPage.js";
@@ -46,6 +48,11 @@ import MyPolicyPage from "./page/MyPolicyPage/MyPolicyPage.js";
 import ResetPasswordPage from "./page/ResetPasswordPage/ResetPassword";
 
 import HomePage  from"./page/homePage/homePage"
+
+
+import CookiePolicy from "./page/CookiePolicyPage/CookiePolicyPage.js"
+
+import ReceiptPageTax from "./page/ReceiptPage-tax/ReceiptPage.js"
 function AppContent() {
   const location = useLocation(); // ใช้ useLocation ภายใน Router context
 
@@ -65,7 +72,9 @@ function AppContent() {
         <Route path="/car-info" element={<CarInfo />} />
         <Route path="/policy-ownerInfo" element={<PolicyOwnerInfo />} />
         <Route path="/payment-page" element={<PaymentPage />} />
+        <Route path="/payment-pageTax" element={<PaymentPageTax />} />
         <Route path="/upload-receipt" element={<UploadReceipt />} />
+        <Route path="/upload-receiptTax" element={<UploadReceiptTax />} />
         <Route path="/document-page" element={<DocumentPage />} />
         <Route path="/tax-renewal" element={<TaxRenewal />} />
         <Route path="/tax-payment-page" element={<TaxPaymentPage />} />
@@ -130,6 +139,12 @@ function AppContent() {
 
         
         <Route path="/home-page" element={<HomePage />} />
+
+
+        <Route path="/cookie-policy-page" element={<CookiePolicy/>} />
+
+
+        <Route path="/receipt-page-tax" element={<ReceiptPageTax/>} />
       </Routes>
     </div>
   );

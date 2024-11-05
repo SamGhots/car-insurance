@@ -126,7 +126,9 @@ color: var(--color-white);
   border-radius: 8px;
 }
 .navbar-item:hover {
-  background-color: #93d1ec99; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+
+
+  /* background-color: #93d1ec99;*/
 
  
 }
@@ -143,6 +145,9 @@ color: var(--color-white);
   gap: 15px ;
   font-size: var(--font-size-16-custom);
   font-weight: 500;
+  color: var(--text-color);
+}
+.navbar-item span:hover{
   color: var(--primary-color);
 }
 .dropdown {
