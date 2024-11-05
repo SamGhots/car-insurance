@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/car-insurance/static/css/main.3d105f3e.css",
-    "main.js": "/car-insurance/static/js/main.20b9a5b0.js",
+    "main.css": "/car-insurance/static/css/main.c9e38aa7.css",
+    "main.js": "/car-insurance/static/js/main.cdd47aac.js",
     "static/js/213.c3ee08cf.chunk.js": "/car-insurance/static/js/213.c3ee08cf.chunk.js",
     "static/js/732.b495be14.chunk.js": "/car-insurance/static/js/732.b495be14.chunk.js",
     "static/js/453.38d2c293.chunk.js": "/car-insurance/static/js/453.38d2c293.chunk.js",
@@ -16,6 +16,7 @@
     "static/media/Tax-amico.svg": "/car-insurance/static/media/Tax-amico.d15f18989e8b4a619783cbe9beda1dc1.svg",
     "static/media/indara-logo.svg": "/car-insurance/static/media/indara-logo.7b36518f1f4c9963a1063fc3ab6f1607.svg",
     "static/media/Car crash-pana.svg": "/car-insurance/static/media/Car crash-pana.bec3b14222e268c9b82ae75ec71526c6.svg",
+    "static/media/cookie.png": "/car-insurance/static/media/cookie.e38fb1bd0ae63ae0afab.png",
     "static/media/driving-rafiki 387ADF.svg": "/car-insurance/static/media/driving-rafiki 387ADF.3aa2cf05aa9c60743de3008fadf85061.svg",
     "static/media/Cat and dog-pana.svg": "/car-insurance/static/media/Cat and dog-pana.b6741868751cf14934d2b7e8d27a2c91.svg",
     "static/media/car3.svg": "/car-insurance/static/media/car3.7d305b9bd484e7e2689c94917fe37d97.svg",
@@ -23,6 +24,7 @@
     "static/media/car4.svg": "/car-insurance/static/media/car4.a5419c2845557eec2a83b76efc2bdb1c.svg",
     "static/media/LINE.png": "/car-insurance/static/media/LINE.48f5516e6449f09d0b0f.png",
     "static/media/car5.svg": "/car-insurance/static/media/car5.2b9a456586aedf30135363a75a88554e.svg",
+    "static/media/logo2.svg": "/car-insurance/static/media/logo2.238c92021f3aad8123f9f8fd1eb422d4.svg",
     "static/media/logo.svg": "/car-insurance/static/media/logo.1764c62c2d5ba437a22daededa55dd07.svg",
     "static/media/logo1.svg": "/car-insurance/static/media/logo1.450a427f33aeaf2aaf405b06dbfb9d82.svg",
     "static/media/car2.svg": "/car-insurance/static/media/car2.e0d86404e8c9c01fb073e1b3c822493f.svg",
@@ -51,14 +53,14 @@
     "static/media/shield.svg": "/car-insurance/static/media/shield.b384d2da20d362ed90d6666ad31fcf9e.svg",
     "static/media/Calendar.svg": "/car-insurance/static/media/Calendar.24e65cb4e108d1d1144609413ca1eff8.svg",
     "static/media/Calendar3.svg": "/car-insurance/static/media/Calendar3.07177b1be771f7d68ec4a0bfe626e293.svg",
-    "main.3d105f3e.css.map": "/car-insurance/static/css/main.3d105f3e.css.map",
-    "main.20b9a5b0.js.map": "/car-insurance/static/js/main.20b9a5b0.js.map",
+    "main.c9e38aa7.css.map": "/car-insurance/static/css/main.c9e38aa7.css.map",
+    "main.cdd47aac.js.map": "/car-insurance/static/js/main.cdd47aac.js.map",
     "213.c3ee08cf.chunk.js.map": "/car-insurance/static/js/213.c3ee08cf.chunk.js.map",
     "732.b495be14.chunk.js.map": "/car-insurance/static/js/732.b495be14.chunk.js.map",
     "453.38d2c293.chunk.js.map": "/car-insurance/static/js/453.38d2c293.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d105f3e.css",
-    "static/js/main.20b9a5b0.js"
+    "static/css/main.c9e38aa7.css",
+    "static/js/main.cdd47aac.js"
   ]
 }
