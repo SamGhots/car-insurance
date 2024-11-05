@@ -52,9 +52,9 @@ function Navbar() {
           </span>
           <div className={`dropdown ${openDropdown === "insurance" ? "open" : ""}`}>
             <ul>
-              <li><i class="fa-solid fa-shield"></i>รายการ 1</li>
-              <li><i class="fa-solid fa-shield"></i>รายการ 2</li>
-              <li><i class="fa-solid fa-shield"></i>รายการ 3</li>
+              <li><i class="fa-solid fa-car"></i>ประกัน พ.ร.บ</li>
+              <li><i class="fa-solid fa-book"></i>ออกภาษี</li>
+              <li><i class="fa-solid fa-shield"></i>ออกประกัน พ.ร.บ เเละ ภาษี</li>
             </ul>
           </div>
         </div>
@@ -66,9 +66,9 @@ function Navbar() {
           </span>
           <div className={`dropdown ${openDropdown === "articles" ? "open" : ""}`}>
             <ul>
-              <li>บทความ 1</li>
-              <li>บทความ 2</li>
-              <li>บทความ 3</li>
+              <li><i class="fa-solid fa-book"></i>บทความทั้งหมด</li>
+              <li><i class="fa-solid fa-book"></i>บทความประกันรถยนต์</li>
+              <li><i class="fa-solid fa-book"></i>บทความประกันเดินทาง</li>
             </ul>
           </div>
         </div>
@@ -80,9 +80,9 @@ function Navbar() {
           </span>
           <div className={`dropdown ${openDropdown === "promotions" ? "open" : ""}`}>
             <ul>
-              <li>โปรโมชัน 1</li>
-              <li>โปรโมชัน 2</li>
-              <li>โปรโมชัน 3</li>
+            <li><i class="fas fa-tags"></i> ชั้น 1 ซื้อออนไลน์ถูกกว่า</li>
+  <li><i class="fas fa-percentage"></i> ชั้น 2+,3+ กรอกโค้ดลดอีก</li>
+           
             </ul>
           </div>
         </div>
@@ -94,9 +94,8 @@ function Navbar() {
           </span>
           <div className={`dropdown ${openDropdown === "consultation" ? "open" : ""}`}>
             <ul>
-              <li>คำปรึกษา 1</li>
-              <li>คำปรึกษา 2</li>
-              <li>คำปรึกษา 3</li>
+            <li><i class="fas fa-headset"></i> ปรึกษากูรูประกันฟรี</li>
+          
             </ul>
           </div>
         </div>

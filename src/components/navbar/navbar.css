@@ -152,13 +152,13 @@ color: var(--color-white);
 }
 .dropdown {
   position: absolute; /* ให้ dropdown อยู่เหนือไอเท็ม */
-  top: 100%; /* เลื่อนลงไปด้านล่าง */
+  top: 143%; /* เลื่อนลงไปด้านล่าง */
   left: 0;
   background-color: white; /* หรือสีที่ต้องการ */
   border: 1px solid #d8dbe9; /* เพิ่มกรอบ */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
   z-index: 10; /* ให้ dropdown อยู่ด้านหน้า */
-  min-width: 150px; /* กำหนดความกว้างขั้นต่ำ */
+  min-width: 239px; /* กำหนดความกว้างขั้นต่ำ */
   border-radius: 10px; /* ตั้งค่า border-radius ทั้งหมด */
   border-top-left-radius: 0; /* ยกเว้นมุมบนซ้าย */
   opacity: 0; /* ทำให้โปร่งใส */
